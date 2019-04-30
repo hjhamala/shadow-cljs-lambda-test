@@ -1,0 +1,6 @@
+{:source-paths ["src"]
+ :dependencies [[cljs-http "0.1.46"]]
+ :builds {:app {:target :node-library
+                :exports {:handler core/handler}
+                :output-dir "target"
+                :output-to "target/main.js"}}}
